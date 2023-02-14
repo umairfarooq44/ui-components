@@ -1,0 +1,4 @@
+node_modules/
+.next/
+storybook/storybook-static/
+.vscode/

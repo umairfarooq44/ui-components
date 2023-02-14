@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": false,
+
+    "incremental": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["esnext", "dom"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "outDir": "./_dist/esm/",
+    "target": "es5"
+  },
+  "include": ["typings", "index.ts"],
+  "exclude": ["node_modules/**"]
+}

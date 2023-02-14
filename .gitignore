@@ -1,0 +1,23 @@
+# node_modules
+storybook/node_modules
+storybook/storybook-static
+
+# static assets for the storybook local build
+.out
+
+# personal vscode settings for the project
+.vscode
+/Users
+
+_dist
+
+# logs
+lerna-debug.log
+node_modules
+
+# MAC OS files
+.DS_Store
+
+yarn-error.log
+
+.idea

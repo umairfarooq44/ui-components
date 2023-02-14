@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": false,
+
+    "incremental": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["esnext", "dom"],
+    "module": "commonjs",
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "outDir": "./_dist/cjs/",
+    "target": "es5"
+  },
+  "include": ["typings", "index.ts"],
+  "exclude": ["node_modules/**"]
+}

@@ -1,0 +1,58 @@
+import { Theme as defaultTheme } from '../../styles';
+
+const config = {
+  viewport: {
+    viewports: {
+      xxsmall: {
+        name: 'xxsmall',
+        styles: {
+          width: `${defaultTheme.breakpoints.xsmall - 1}px`,
+          height: '100%'
+        },
+        type: 'mobile'
+      },
+      xsmall: {
+        name: 'xsmall',
+        styles: {
+          width: `${defaultTheme.breakpoints.small - 1}px`,
+          height: '100%'
+        },
+        type: 'mobile'
+      },
+      small: {
+        name: 'small',
+        styles: {
+          width: `${defaultTheme.breakpoints.medium - 1}px`,
+          height: '100%'
+        },
+        type: 'mobile'
+      },
+      medium: {
+        name: 'medium',
+        styles: {
+          width: `${defaultTheme.breakpoints.large - 1}px`,
+          height: '100%'
+        },
+        type: 'tablet'
+      },
+      large: {
+        name: 'large',
+        styles: {
+          width: `${defaultTheme.breakpoints.xlarge - 1}px`,
+          height: '100%'
+        },
+        type: 'desktop'
+      },
+      xlarge: {
+        name: 'xlarge',
+        styles: {
+          width: `100%`,
+          height: '100%'
+        },
+        type: 'desktop'
+      }
+    }
+  }
+};
+
+export default config;
