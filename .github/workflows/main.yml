@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: '16'
       - name: Install modules
-        run: npm ci --ignore-scripts
+        run: npm ci --force
       - name: Run ESLint
         run: npm run eslint:run
       - name: Run Prettier
