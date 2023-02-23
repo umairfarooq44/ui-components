@@ -6,7 +6,10 @@ export default {
   component: Text
 };
 
-const Template = args => <Text {...args} />;
+const Template = ({ children, ...args }) => {
+  console.log(args);
+  return <Text {...args}>{children}</Text>;
+};
 
 export const Heading = Template.bind({});
 
@@ -16,3 +19,11 @@ const commonProps = {
 };
 
 Heading.args = commonProps;
+
+export const Body = Template.bind({});
+
+Body.args = {
+  ...commonProps,
+  size: 'body1',
+  children: 'body Text'
+};

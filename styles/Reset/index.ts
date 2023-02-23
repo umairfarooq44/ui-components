@@ -6,7 +6,7 @@ const Reset = createGlobalStyle`
   ${reset}
 
   :root {
-    --focus-color: var(--color-yellow-60, #ffc107);
+    --focus-color: #f6ad28;
     --focus-style: 2px solid var(--focus-color);
   }
 
@@ -21,7 +21,7 @@ const Reset = createGlobalStyle`
   *::before,
   *::after {
     box-sizing: inherit;
-    font-family: inherit;
+    font-family: Inter,"Open Sans",Arial,sans-serif;
   }
 
   a:focus, button:focus, input:focus, select:focus, textarea:focus {

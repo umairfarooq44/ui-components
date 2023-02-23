@@ -18,6 +18,7 @@ export const propValueFromTextSize =
   ) =>
   (props: { size: TextSizeNames; theme: typeof Theme }) => {
     const value = props.theme.textSizes[props.size][prop];
+    console.log(value, props.size);
 
     return Array.isArray(value) ? value[index] : value;
   };
@@ -32,7 +33,7 @@ type TextProps = {
   truncate?: boolean;
 };
 
-const getTextColor = (props: TextProps): any => props.color || 'secondaryBrand';
+const getTextColor = (props: TextProps): any => props.color || 'primaryText';
 
 const InnerTextComponent = styled.span<TextProps>`
   ${props => font(props.font || propValueFromTextSize('font')(props))};
