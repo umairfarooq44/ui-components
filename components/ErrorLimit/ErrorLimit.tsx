@@ -6,7 +6,7 @@ import { HelperText, ErrorText, ErrorIcon, Limit } from './style';
 interface ErrorLimittProps {
   limit?: number;
   error?: string;
-  valueLength: number;
+  valueLength?: number;
 }
 
 const ErrorLimit = (props: ErrorLimittProps) => {

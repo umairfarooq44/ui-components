@@ -3,7 +3,7 @@ import { FaTimes, FaDollarSign } from 'react-icons/fa';
 import { Input } from '../../../components';
 
 export default {
-  title: 'A/Input',
+  title: 'Form/Input',
   component: Input
 };
 
