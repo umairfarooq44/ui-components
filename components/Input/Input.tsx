@@ -19,6 +19,7 @@ interface InputProps extends ComponentPropsWithoutRef<'input'> {
   value?: InputValue;
   limit?: number;
   error?: string;
+  hasError?: boolean;
 }
 
 const Input = (props: InputProps, ref: ForwardedRef<HTMLInputElement>) => {
@@ -32,6 +33,7 @@ const Input = (props: InputProps, ref: ForwardedRef<HTMLInputElement>) => {
     onChange,
     className,
     disabled,
+    hasError,
     ...rest
   } = props;
 
@@ -53,7 +55,7 @@ const Input = (props: InputProps, ref: ForwardedRef<HTMLInputElement>) => {
   return (
     <>
       <Container
-        hasError={typedBoolean(error)}
+        hasError={hasError || typedBoolean(error)}
         className={className}
         disabled={disabled}
       >

@@ -29,6 +29,7 @@ const theme = {
     primaryText: '#000000',
     primaryTextLight: '#777777',
     primaryBorder: '#e1e1e1',
+    primaryBorderLight: '#f7f7f7',
     primary: '#1c41e4',
     primaryDark: '#141389',
     focus: '#f6ad28',
